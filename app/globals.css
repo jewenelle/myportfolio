@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .front-end {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: overline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+  }
+  body {
+    font-family: roboto-slab, sans-serif;
+  }
+  .intro--name {
+    font-family: "Roboto", sans-serif;
+  }
+  .pre {
+    font-family: roboto;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+  svg {
+    font-family: "Russo One", sans-serif;
+    width: 100%;
+  }
+  svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #000000;
+    font-size: 74px;
+  }
+  @keyframes stroke {
+    0% {
+      fill: rgba(0, 0, 0, 0);
+      stroke: rgba(0, 0, 0, 1);
+      stroke-dashoffset: 25%;
+      stroke-dasharray: 0 50%;
+      stroke-width: 2;
+    }
+    70% {
+      fill: rgba(0, 0, 0, 0);
+      stroke: rgba(0, 0, 0, 1);
+    }
+    80% {
+      fill: rgba(0, 0, 0, 0);
+      stroke: rgba(0, 0, 0, 1);
+      stroke-width: 3;
+    }
+    100% {
+      fill: rgba(0, 0, 0, 1);
+      stroke: rgba(0, 0, 0, 0);
+      stroke-dashoffset: -25%;
+      stroke-dasharray: 50% 0;
+      stroke-width: 0;
+    }
+  }
+}
